@@ -11,6 +11,8 @@ public class DotChaser {
    *
    * A STATIC CLASS? OH NO! GET IT OUT OF HERE!
    */
+  
+  /* 
   public class Thing {
     // dir: 0=North, 1=East, 2=South, 3=West.
     // timeSinceLast: this is only important for "TypeB" Things.
@@ -18,6 +20,7 @@ public class DotChaser {
     public char lab = 'r';
     public boolean isTypeB;
   }
+  */
 
   /**
    * YOU'LL NEED TO PUT THIS SOMEWHERE ELSE
