@@ -11,7 +11,7 @@ public class DotChaser {
    *
    * A STATIC CLASS? OH NO! GET IT OUT OF HERE!
    */
-  public static class Thing {
+  public class Thing {
     // dir: 0=North, 1=East, 2=South, 3=West.
     // timeSinceLast: this is only important for "TypeB" Things.
     public int  row, col, dir, timeSinceLast;
@@ -25,12 +25,13 @@ public class DotChaser {
    *       WE DON'T HAVE TO USE NODES HERE?
    * This class is for linked lists of Thing's
    */
-  public static class Node {
-    public Thing data;
-    public Node  next;
-  }
+  //public static class Node {
+  //  public Thing data;
+  //  public Node  next;
+  //}
 
   // EEEEEK! STATIC METHODS!!! PLEASE FIND THEM A BETTER HOME.
+  /* 
   public static void rightTurn(Thing t) {
     t.dir = (t.dir + 1) % 4;
   }
@@ -66,7 +67,7 @@ public class DotChaser {
       }
     }
   }
-
+  */
   public static void step(Thing t) {
     final int[] dc = {
       0, 1, 0, -1
