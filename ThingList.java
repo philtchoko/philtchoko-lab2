@@ -1,8 +1,8 @@
 
 public class ThingList {
-    private Node head;
+    public Node head;
     
-    static class Node {
+     class Node {
         public Thing data;
         public Node next;
       }
@@ -31,10 +31,25 @@ public class ThingList {
     public void printAll(){
         Node it = head;
         while(it != null){
-            System.out.println(it.toString());
+            Thing thing = it.data;
+            System.out.println(thing.tothingString());
             it = it.next;
         }
         
     }
+    public void moveAll(){
+        Node it = head;
+        while (it != null){
+           Thing thing = it.data;
+           thing.maybeTurn();
+           thing.step();
+
+        }
+    }
+
+
+   
+
+   
 
 }
